@@ -1,0 +1,385 @@
+/* Below are all of the stylization for the pages and their text, size, color, etc. */
+
+
+/* Main pages and all pages settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fad1ca; /* Pink pale */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fad1ca;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 4.5em;
+    color: #c27b7b; /* Change for color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c27b7b;
+    margin-top: 100px; /* Adjust this value to move the navbar down */
+}
+
+/* Apply the same font-family and size as the rest of the website */
+.navbar a {
+    font-family: 'Arial Black', Gadget, sans-serif; /* Match this to your site's main font */
+    font-size: 1.5em; /* Adjust size to match the overall site */
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block; /* Ensure links are inline */
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.logo {
+    position: absolute;
+    right: 120px; /* Adjust this value to move the image to the left */
+    top: 10px;
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+
+main {
+    padding: 20px;
+}
+/* Styling for the contact information */
+footer {
+    text-align: center;
+    background-color: #f1e7c6;
+    padding: 20px;
+    font-family: 'Arial Black', Gadget, sans-serif; /* Main font */
+    font-size: 2em; 
+    color: #6b4226; 
+}
+
+footer h2 {
+    font-family: 'Pacifico', cursive; /* Matches the title font */
+    font-size: 1.5em; 
+    color: #c27b7b; 
+    margin-bottom: 20px; /* Space between title and content */
+}
+
+footer p {
+    font-family: 'Arial Black', Gadget, sans-serif; /* Consistent font with the rest of the site */
+    font-size: 1em; 
+    color: #6b4226; 
+    margin: 10px 0; 
+}
+.specials, .classic-items, .signature-items, .special-orders {
+    text-align: center;
+}
+
+.item, .special-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+
+/* ***************************************************** */
+
+
+/* Classic page settings */
+.classic-items {
+    padding: 20px;
+    text-align: center;
+}
+
+.classic-items h2 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* A bold, standout font */
+    font-size: 3em; /* Increase the font size */
+    font-weight: bold; /* Ensure the font is bold */
+    color: #6b4226; /* A rich, standout color */
+    text-align: center; /* Center the title on the page */
+    margin-bottom: 40px; /* Space between the title and the items */
+}
+
+.item {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fffaf0; /* Optional: light background for the dessert boxes */
+    text-align: left; /* Align text to the left */
+    position: relative;
+}
+
+
+.item h3 {
+    position: absolute;
+    top: 10px; /* Position the title at the top of the box */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Pacifico', cursive; /* Use a cute font here */
+    font-size: 2.5em; /* Adjust the font size as needed */
+    color: #c27b7b; /* Color for the dessert titles */
+    margin: 0;
+    text-align: center; /* Center the title text */
+    width: 100%; /* Ensure the title spans the width of the box */
+}
+
+.item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item p {
+    font-family: 'Arial Black', Gadget, sans-serif; /* A bold, standout font */
+    font-size: 2.3em; /* Increase the font size */
+    font-weight: bold; /* Ensure the font is bold */
+    color: #6b4226; /* A rich, standout color */
+    margin-bottom: 20px; /* Space between title and content */
+    text-align: right; /* Center the title text */
+    width: 100%; /* Ensure the title spans the width of the box */
+}
+
+.item img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    
+    margin-left: 20px; /* Add space between image and text */
+}
+
+/* ***************************************************** */
+/* Specials page settings */
+.specials {
+    padding: 20px;
+    text-align: center;
+}
+
+.specials h2 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* A bold, standout font */
+    font-size: 3em; /* Increase the font size */
+    font-weight: bold; /* Ensure the font is bold */
+    color: #6b4226;
+    text-align: center; /* Center the title on the page */
+    margin-bottom: 40px; /* Space between the title and the items */
+}
+
+.special-item {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fffaf0; /* Optional: light background for the dessert boxes */
+    text-align: left; /* Align text to the left */
+    position: relative;
+}
+
+.special-item h3 {
+    position: absolute;
+    top: 10px; /* Position the title at the top of the box */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Pacifico', cursive; /* Use a cute font here */
+    font-size: 2.5em; /* Adjust the font size as needed */
+    color: #c27b7b; /* Color for the dessert titles */
+    margin: 0;
+    text-align: center; /* Center the title text */
+    width: 100%; /* Ensure the title spans the width of the box */
+}
+
+
+
+.special-item p {
+    font-family: 'Arial Black', Gadget, sans-serif; /* A bold, standout font */
+    font-size: 2.3em; /* Increase the font size */
+    font-weight: bold; /* Ensure the font is bold */
+    color: #6b4226; /* A rich, standout color */
+    margin-bottom: 20px; /* Space between title and content */
+    text-align: left; /* Center the title text */
+    width: 100%; /* Ensure the title spans the width of the box */
+}
+
+.special-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; 
+    margin: 0; 
+    width: 100%; /* Ensure the content spans the full width */
+}
+
+.special-item img {
+    max-width: 40%; /* Adjust the image size */
+    height: auto;
+    display: block;
+    margin-left: auto; /* Push the image to the right */
+    margin-right: 0; /* Remove any margin on the right */
+    padding: 0; /* Remove padding */
+}
+
+/* ***************************************************** */
+/* Signatures page settings */
+.signature-items {
+    padding: 20px;
+    text-align: center;
+}
+
+.signature-items h2 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* A bold, standout font */
+    font-size: 3em; /* Increase the font size */
+    font-weight: bold; /* Ensure the font is bold */
+    color: #6b4226; /* A rich, standout color */
+    text-align: center; /* Center the title on the page */
+    margin-bottom: 40px; /* Space between the title and the items */
+}
+
+.signature-item {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fffaf0; /* Optional: light background for the dessert boxes */
+    text-align: left; /* Align text to the left */
+    position: relative;
+}
+
+.signature-item h3 {
+    position: absolute;
+    top: 10px; /* Position the title at the top of the box */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Pacifico', cursive; /* Use a cute font here */
+    font-size: 2.5em; /* Adjust the font size as needed */
+    color: #c27b7b; /* Color for the dessert titles */
+    margin: 0;
+    text-align: center; /* Center the title text */
+    width: 100%; /* Ensure the title spans the width of the box */
+}
+
+.signature-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.signature-item p {
+    font-family: 'Arial Black', Gadget, sans-serif; /* A bold, standout font */
+    font-size: 2.3em; /* Increase the font size */
+    font-weight: bold; /* Ensure the font is bold */
+    color: #6b4226; /* A rich, standout color */
+    margin-bottom: 20px; /* Space between title and content */
+    text-align: left; /* Center the title text */
+    width: 100%; /* Ensure the title spans the width of the box */
+}
+
+
+.signature-item img {
+    max-width: 40%; /* Adjust the image size */
+    height: auto;
+    display: block;    
+    margin-left: 20px; /* Add space between image and text */
+    width: 40%;
+}
+/* ***************************************************** */
+
+
+/* Special Orders page styling */
+/* ***************************************************** */
+.special-orders {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial Black', Gadget, sans-serif; /* Main font */
+    font-size: 2em; 
+    color: #6b4226; 
+}
+
+.special-orders h2 {
+    font-family: 'Pacifico', cursive; 
+    font-size: 1.5em; 
+    color: #c27b7b;
+    margin-bottom: 30px; 
+}
+
+.special-orders p {
+    font-family: 'Arial Black', Gadget, sans-serif; 
+    font-size: 1em; 
+    color: #6b4226; 
+    margin: 15px 0; 
+}
+
+/* Styling for form elements on the Special Orders page */
+.special-orders form {
+    font-family: 'Arial Black', Gadget, sans-serif; 
+    font-size: 1em; 
+    color: #6b4226; 
+}
+
+.special-orders input, 
+.special-orders textarea, 
+.special-orders select, 
+.special-orders button {
+    font-family: 'Arial Black', Gadget, sans-serif; /* Match form element fonts */
+    font-size: 1em;
+    color: #6b4226;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Style for the submit button */
+.special-orders button {
+    background-color: #c27b7b; 
+    color: white; /* Button text color */
+    cursor: pointer;
+}
+
+.special-orders button:hover {
+    background-color: #fad1ca; /* Lighter shade on hover */
+
+}
+/* ***************************************************** */
+/* Style for the order confirmation message */
+#order-confirmation {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 1em;
+    color: #6b4226;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#order-confirmation h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: #c27b7b;
+    margin-bottom: 20px;
+}
+
+#order-confirmation p {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 1.5em;
+    color: #6b4226;
+    margin: 15px 0;
+}
+/* ***************************************************** */

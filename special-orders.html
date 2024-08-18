@@ -1,0 +1,66 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Special Orders - Whisk me away bakery</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <!-- below is the header/nagivation bar calling other html files -->
+            <h1 class="title">Whisk me away bakery</h1>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="classic.html">Classic</a>
+                <a href="signature.html">Signature</a>
+                <a href="special-orders.html">Special Orders</a>
+                <a href="index.html#contact">Contact</a>
+                <img src="logo.jpg" alt="Bakery Logo" class="logo">
+            </nav>
+        </header>
+    <!-- in main section have the option to order custom dessert -->
+        <main>
+            <section class="special-orders">
+                <h2>Special Orders</h2>
+                <form id="special-order-form">
+                    <div class="form-group">
+                        <label for="contact-info">Contact Info:</label>
+                        <input type="text" id="contact-info" name="contact-info" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-date">When Order is Needed:</label>
+                        <input type="date" id="order-date" name="order-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-details">Details of Order:</label>
+                        <textarea id="order-details" name="order-details" required></textarea>
+                    </div>
+                    <button type="submit">Submit Order</button>
+                </form>
+    
+                <!-- Order Confirmation Message -->
+                <div id="order-confirmation" style="display: none;">
+                    <h2>ORDER COMPLETED</h2>
+                    <p>Please wait 24 hours to hear back by the email you provided to get a confirmation for the order requested.</p>
+                </div>
+            </section>
+        </main>
+
+          <!-- Java Script in order to send to Confirmation Message when submit button is clicked -->
+        <script>
+            document.getElementById('special-order-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from actually submitting
+    
+                // Hide the form
+                document.getElementById('special-order-form').style.display = 'none';
+    
+                // Show the confirmation message
+                document.getElementById('order-confirmation').style.display = 'block';
+            });
+        </script>
+
+</body>
+</html>
